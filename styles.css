@@ -3,9 +3,11 @@ body {
 
 }
 
-.photo {  
+img{
+  width: 50vw;
   margin-top: 50px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 1s;
 }
 
 header {
@@ -46,6 +48,4 @@ footer{
 }
 
 
-.item-9 {
-  flex-grow: 0.8;
-}/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles.css.map */

@@ -7,64 +7,28 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="App.js"></script>
 </head>
-<script>
-function show () {
-    document.getElementById('image')
-        .style.display = "block"; 
-    document.getElementById('image').src = "https://upload.wikimedia.org/wikipedia/commons/5/54/Vw_t3_s_sst.jpg"
-    }
-function show1 () {
-    document.getElementById('image')
-        .style.display = "block"; 
-    document.getElementById('image').src = "https://imgd.aeplcdn.com/0x0/n/cw/ec/41406/bmw-8-series-right-front-three-quarter8.jpeg"
-    }
-function show2 () {
-    document.getElementById('image')
-        .style.display = "block"; 
-    document.getElementById('image').src = "https://mediaservice.audi.com/media/live/50900/fly1400x601n1/f5f/2022.png?imwidth=850"
-    }
-function show3 () {
-    document.getElementById('image')
-        .style.display = "block"; 
-    document.getElementById('image').src = "https://c-3d.niceshops.com/upload/image/product/large/default/7758_437e916d.jpg"
-    }
-function show4 () {
-    document.getElementById('image')
-        .style.display = "block"; 
-    document.getElementById('image').src = "https://stimg.cardekho.com/images/carexteriorimages/930x620/Mercedes-Benz/AMG-G-63/8591/1630666326351/front-left-side-47.jpg"
-    }
 
-    function show5 () {
-    document.getElementById('image')
-        .style.display = "none"; 
-    }
-
-</script>
 <body>
     <header>
-            <div class="logo1"onclick="show5()">Aten<span style="color:red">Logo</span>
+        <div class="logo1"onclick="show5()">Aten<span style="color:red">Logo</span>
         </div>  
 
-        <div class="nav">
-            <div class="item item-1 btn btn-primary" onclick="show()">Tölkki</div>
-            <div class="item item-2 btn btn-primary" onclick="show1()">BMW</div>
-            <div class="item item-3 btn btn-primary" onclick="show2()">Audi</div>
-            <div class="item item-4 btn btn-primary" onclick="show3()">Golf</div>
-            <div class="item item-5 btn btn-primary" onclick="show4()">Mersu</div>       
-             
-
-        </div>
-    </header>
-
+        <ul class="nav">            
+                <li class="btn btn-primary" onclick="show('https://stimg.cardekho.com/images/carexteriorimages/930x620/Mercedes-Benz/AMG-G-63/8591/1630666326351/front-left-side-47.jpg' )">Mersu</li>
+                <li class="btn btn-primary" onclick="show('https://imgd.aeplcdn.com/0x0/n/cw/ec/41406/bmw-8-series-right-front-three-quarter8.jpeg')">BMW</li>
+                <li class="btn btn-primary" onclick="show('https://mediaservice.audi.com/media/live/50900/fly1400x601n1/8wc/2022.png?imwidth=850')">Audi</li>
+                <li class="btn btn-primary" onclick="show('https://r-media.volkswagen.com/v2/VW/5H0-2023-MULTI/5H0-2023-MP2/20221212/fi-FI-fi/0Q0Q/UN/0B1,0FA,0IC,0K3,0N4,0P0,0QT,0TD,1A5,1D0,1E5,1G8,1J2,1KJ,1LG,1X0,2CM,2F0,2H5,2JW,2PT,31K,3A2,3CA,3FA,3H0,3L3,3LT,3NU,3QH,3T2,4A3,4BI,4D0,4E0,4GF,4I7,4KF,4L6,4P0,4UF,4ZQ,5C0,5F1,5JA,5MR,5XJ,6C2,6E3,6FF,6I6,6Q6,6T2,6XQ,6Y8,79H,7B2,7J2,7P4,7UG,7X2,8AR,8IU,8J3,8N6,8Q5,8RT,8T8,8TL,8VM,8WK,8Z5,8ZQ,9JA,9M0,9P4,9Z0,9ZV,A8K,AV1,B0A,C4N,E0A,EL5,ER1,G1A,GW2,K8G,KA0,KH7,KS1,L0L,ML9,N2T,NZ4,Q4P,QJ1,QK1,QQ4,QV3,TH8,U9E,UD2,UH2,VF1/D6MOFASideview/b19d7b4a-df80-487c-908a-47785dbb35fc/7cf4e38951cb74b34b67c336ade7be19837d3a001ff3fa49f682b5b8f505fc6a.png?width=864')">Golf</li>
+                <li class="btn btn-primary" onclick="show('https://expeditionportal.com/media/2022/02/PXL_20211001_180015971-1-scaled.jpg')">Tölkki</li>                
+        </ul>
+    </header>    
     <footer> 
-
         <div class="logo2">Aten<span style="color:red">Logo</span>
         </div>
         <div class="photo"> 
             <img id="image" src="" />
         </div>
-        
     </footer>
 </body>
 </html>
